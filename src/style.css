@@ -19,11 +19,13 @@ select {
   border-radius: 4px;
   padding: 10px;
   font-size: 10px;
-  background-color: #f2e9d0;
+  background-color: #eaceb4;
   border: none;
   border-radius: 6px;
   padding: 15px 20px;
   font-size: 16px;
+  text-align: center;
+  font-size: 24px;
 }
 
 a {
@@ -45,16 +47,6 @@ main {
   padding: 30px 0;
 }
 
-#city-1,
-#city-3 {
-  color: green;
-}
-
-#city-2,
-#city-4 {
-  color: blue;
-}
-
 .city-container {
   font-size: 50px;
   line-height: 48px;
@@ -64,26 +56,41 @@ main {
   justify-content: space-between;
 }
 
+h2 {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
 .city-1,
 .city-2,
 .city-3,
 .city-4 {
-  border-right: 1px dashed green;
+  padding-top: 5px;
+  color: #bb5a5a;
+  border-right: 5px solid #f2e9d0;
+  text-align: center;
 }
 
-.date {
-  font-size: 40px;
-  color: #eaceb4;
+.date-1,
+.date-2,
+.date-3,
+.date-4 {
+  font-size: 32px;
+  color: #e79e85;
   line-height: 24px;
   font-weight: bold;
   padding-top: 18px;
-  margin: 12px 0 12px 0;
+  margin: 12px 12px 12px 0;
   padding-bottom: 18px;
 }
-.time {
-  font-size: 40px;
+
+.time-1,
+.time-2,
+.time-3,
+.time-4 {
+  font-size: 32px;
   font-weight: bold;
-  color: #e79e85;
+  color: #eaceb4;
   line-height: 24px;
   font-weight: 500;
   padding-top: 18px;
@@ -91,13 +98,11 @@ main {
 }
 
 .details-1,
-.details-3 {
-  color: yellow;
-}
-
+.details-3,
 .details-2,
 .details-4 {
-  color: red;
+  font-size: 10px;
+  margin-top: 10px;
 }
 
 footer {
