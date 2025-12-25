@@ -19,22 +19,15 @@ function updateTime() {
     moment().tz("America/New_York").format("a");
 
   let date3Element = document.querySelector(".date-3");
-  date3Element.innerHTML = moment().tz("Asia/Seoul").format("MMMM Do YYYY");
+  date3Element.innerHTML = moment()
+    .tz("America/St_Thomas")
+    .format("MMMM Do YYYY");
 
   let time3Element = document.querySelector(".time-3");
   time3Element.innerHTML =
-    moment().tz("Asia/Seoul").format("h:mm:ss") +
+    moment().tz("America/St_Thomas").format("h:mm:ss") +
     " " +
-    moment().tz("Asia/Seoul").format("a");
-
-  let date4Element = document.querySelector(".date-4");
-  date4Element.innerHTML = moment().tz("Africa/Cairo").format("MMMM Do YYYY");
-
-  let time4Element = document.querySelector(".time-4");
-  time4Element.innerHTML =
-    moment().tz("Africa/Cairo").format("h:mm:ss") +
-    " " +
-    moment().tz("Africa/Cairo").format("a");
+    moment().tz("America/St_Thomas").format("a");
 }
 
 updateTime();
