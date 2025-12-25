@@ -29,6 +29,23 @@ function updateTime() {
     " " +
     moment().tz("America/St_Thomas").format("a");
 }
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  let cityTime = moment().tz(cityTimeZone);
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+  let cityElement = document.querySelector(".city-container");
+  cityElement.innerHTML = `
+    <div class="city-5">
+      <h2>${cityName}</h2>
+      <div class="details-5">
+        <div class="date-5">${cityTime.format("MMMM Do YYYY")}</div>
+        <div class="time-5">${cityTime.format("h:mm:ss a")}</div>
+      </div>
+    </div>`;
+}
 
 updateTime();
 setInterval(updateTime, 1000);
+
+let dropdownSelectElement = document.querySelector("#dropdown");
+dropdownSelectElement.addEventListener("change", updateCity);
