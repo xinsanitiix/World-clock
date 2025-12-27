@@ -14,6 +14,7 @@ body {
 }
 
 select {
+  font-family: "Pacifico", cursive;
   display: block;
   width: 100%;
   border-radius: 4px;
@@ -115,11 +116,23 @@ h2 {
 }
 
 footer {
-  border-top: solid 1px #f2e9d0;
+  border-top: dashed 1px #f2e9d0;
   padding: 30px 0 0 0;
   text-align: center;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.6);
+}
+
+#home-button {
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  background-color: #eaceb4;
+  border-radius: 6px;
+  padding: 2px 2px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Pacifico", cursive;
 }
 
 .first-color {

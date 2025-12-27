@@ -42,9 +42,13 @@ function updateCity(event) {
       <h2>${cityName}</h2>
       <div class="details-5">
         <div class="date-5">${cityTime.format("MMMM Do YYYY")}</div>
-        <div class="time-5">${cityTime.format("h:mm:ss")}</div>
+        <div class="time-5">${cityTime.format("h:mm a")}</div>
       </div>
     </div>`;
+}
+
+function mainWindow() {
+  location.reload();
 }
 
 updateTime();
@@ -52,3 +56,6 @@ setInterval(updateTime, 1000);
 
 let dropdownSelectElement = document.querySelector("#dropdown");
 dropdownSelectElement.addEventListener("change", updateCity);
+
+let homeElement = document.querySelector("#home-button");
+homeElement.addEventListener("click", mainWindow);
