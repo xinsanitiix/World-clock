@@ -75,6 +75,9 @@ h2 {
   color: #bb5a5a;
   text-align: center;
   width: 100%;
+  border-right: 5px solid #f2e9d0;
+  border-left: 5px solid #f2e9d0;
+  border-bottom: 5px solid #f2e9d0;
 }
 
 .date-1,
